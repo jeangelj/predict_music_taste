@@ -38,7 +38,12 @@ However, in 2012 a Kaggle competition called "Million Song Dataset Challenge" wa
 
 ##Hypothesis
 
+##Project Proposal
+https://prezi.com/dldm6ttndwxh/one-million/
+
 ##Available Features
+
+##Visualization
 
 ##Statistical Methods
 
