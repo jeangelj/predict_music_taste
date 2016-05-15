@@ -45,22 +45,39 @@ https://prezi.com/dldm6ttndwxh/one-million/
 
 ##Visualization
 
-##Statistical Methods
-
 ##Process
-1. get data
-    - read different data sets
-        - kaggle song information 
-        - kaggle user information 
-        - lyrics data
-        - genre data
-    - merge different data sets
-2. clean data
-3. visualize and analyze data
-4. get data ready for machine learning 
-    - create train and test data sets
-5. train model: 
-6. test model 
+
+###get data
+
+#### read in different data sets
+
+##### hdf5 song details 
+(see Getting the Million Song Dataset (HDF5).ipynb)
+
+##### kaggle files
+
+##### lyrics data
+
+#####genre data
+   
+#### merge different data sets
+
+### clean data
+
+### visualize and analyze data
+
+### get data ready for model
+
+#### add additional features 
+
+#### use k-means clustering to add additional features
+
+####split into 3 portions
+Split data into train, cross-validation and test sets. (what percentages?)
+
+### decide on model
+
+### test model 
 
 ##Conclusion
 
