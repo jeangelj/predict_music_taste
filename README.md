@@ -38,30 +38,89 @@ However, in 2012 a Kaggle competition called "Million Song Dataset Challenge" wa
 
 ##Hypothesis
 
+"Pandora was perhaps the frontrunner of combining the two when it started the 'Music Genome Project' way back in 1999 before terms like Big Data even existed. The project considers songs as datasets and analyzes each song using up to 450 distinct musical characteristics or “genes”. A person – a trained music analyst with an actual degree in music – and automated algorithms comb through the song and classify it as Pop/Rock, Hip-Hop/Electronica, Jazz, World Music, and Classical. Decoding the “genes” of the song helps Pandora find the similarities and then successfully predict what a user might like listening to next."
+http://www.byteacademy.co/blog/item/121-the-music-industry-is-growing-more-reliant-on-data-science
+
+With the Spotify's recent pruchase of Seed Scientific, the usage for improving music curation through data science in undeniable. 
+
+prediction and curation
+
+- predict popularity of song
+- predict next song you will like 
+
 ##Project Proposal
 https://prezi.com/dldm6ttndwxh/one-million/
 
 ##Available Features
 
+from hdf5 10,000 subset:
+song_id = 
+song_title = 
+song_duration = 
+song_release_year = 
+song_hot = 
+song_speed = 
+song_energy = 
+artist_name = 
+song_dance = 
+song_bar = 
+song_beat = 
+song_time_signature = 
+song_tat = 
+song_mode = 
+song_key = 
+artist_familar = 
+artist_hot = 
+
 ##Visualization
 
-##Statistical Methods
-
 ##Process
-1. get data
-    - read different data sets
-        - kaggle song information 
-        - kaggle user information 
-        - lyrics data
-        - genre data
-    - merge different data sets
-2. clean data
-3. visualize and analyze data
-4. get data ready for machine learning 
-    - create train and test data sets
-5. train model: 
-6. test model 
+
+### 1.get data
+
+#### read in different data sets
+
+##### hdf5 song details 
+(see Getting the Million Song Dataset (HDF5).ipynb)
+
+Used https://github.com/tbertinmahieux/MSongsDB/blob/master/PythonSrc/hdf5_getters.py 
+
+
+genre data
+
+##### kaggle files
+
+
+##### lyrics data
+
+I currently managed to get all of the lyrics data as a sqlite database in AWS EC2 python. 
+https://github.com/tbertinmahieux/MSongsDB/blob/master/Tasks_Demos/Lyrics/mxm_dataset_to_db.py
+
+However, I haven't managed to get it into a format where I can merge it with the rest of the data. 
+
+#####genre data
+   
+#### merge different data sets
+
+### 2. clean data
+
+### 3. visualize and analyze data
+
+### 4. get data ready for model
+
+#### add additional features 
+
+#### use k-means clustering to add additional features
+
+####split into 3 portions
+Split data into train, cross-validation and test sets. (what percentages?)
+
+### 5. decide on model
+
+### 6. test model 
 
 ##Conclusion
+????
 
 ##Business / Practical applications
+
