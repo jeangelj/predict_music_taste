@@ -76,7 +76,7 @@ artist_hot =
 
 ##Process
 
-###get data
+### 1.get data
 
 #### read in different data sets
 
@@ -85,24 +85,28 @@ artist_hot =
 
 Used https://github.com/tbertinmahieux/MSongsDB/blob/master/PythonSrc/hdf5_getters.py 
 
-To create lyrics database 
-https://github.com/tbertinmahieux/MSongsDB/blob/master/Tasks_Demos/Lyrics/mxm_dataset_to_db.py
 
 genre data
 
 ##### kaggle files
 
+
 ##### lyrics data
+
+I currently managed to get all of the lyrics data as a sqlite database in AWS EC2 python. 
+https://github.com/tbertinmahieux/MSongsDB/blob/master/Tasks_Demos/Lyrics/mxm_dataset_to_db.py
+
+However, I haven't managed to get it into a format where I can merge it with the rest of the data. 
 
 #####genre data
    
 #### merge different data sets
 
-### clean data
+### 2. clean data
 
-### visualize and analyze data
+### 3. visualize and analyze data
 
-### get data ready for model
+### 4. get data ready for model
 
 #### add additional features 
 
@@ -111,9 +115,9 @@ genre data
 ####split into 3 portions
 Split data into train, cross-validation and test sets. (what percentages?)
 
-### decide on model
+### 5. decide on model
 
-### test model 
+### 6. test model 
 
 ##Conclusion
 ????
