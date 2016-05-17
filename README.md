@@ -29,15 +29,6 @@ Thierry Bertin-Mahieux, Daniel P.W. Ellis, Brian Whitman, and Paul Lamere.
 The Million Song Dataset. In Proceedings of the 12th International Society
 for Music Information Retrieval Conference (ISMIR 2011), 2011.
 
-Initially, I planned on using a subset of the Million Song Dataset consisting of 10,000 songs (1%, 1.8GB).
-The songs are saved in hdf5 format and had to be loaded a module created by Thierrry Bertin-Mahieux called hdf 5 getter. https://github.com/tbertinmahieux/MSongsDB/tree/master/PythonSrc/DatasetCreation
-
-The main problem I was facing that although I was able to use the this subset in python, it began crashing when I wanted to combine the data with some of the other data sets. I especially struggled to merge it with the user data, since I couldn't use a sample of the user data (when I did that I didn't get all of the user data for the subset I had from the million song set - but user data for random songs). Even an inner join wouldn't work do to the size of the user data 3GB.
-
-However, in 2012 a Kaggle competition called "Million Song Dataset Challenge" was started and provided both song information and user data in txt format. https://www.kaggle.com/c/msdchallenge/data
-
-After experimenting a lot with the limited subsets, I decided to use AWS and pull the whole data sets. The Million Song Set it actually available as a public dataset on AWS. https://aws.amazon.com/datasets/million-song-dataset/
-
 ##Hypothesis
 
 "Pandora was perhaps the frontrunner of combining the two when it started the 'Music Genome Project' way back in 1999 before terms like Big Data even existed. The project considers songs as datasets and analyzes each song using up to 450 distinct musical characteristics or “genes”. A person – a trained music analyst with an actual degree in music – and automated algorithms comb through the song and classify it as Pop/Rock, Hip-Hop/Electronica, Jazz, World Music, and Classical. Decoding the “genes” of the song helps Pandora find the similarities and then successfully predict what a user might like listening to next."
