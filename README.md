@@ -36,88 +36,23 @@ The main problem I was facing that although I was able to use the this subset in
 
 However, in 2012 a Kaggle competition called "Million Song Dataset Challenge" was started and provided both song information and user data in txt format. https://www.kaggle.com/c/msdchallenge/data
 
+After experimenting a lot with the limited subsets, I decided to use AWS and pull the whole data sets. The Million Song Set it actually available as a public dataset on AWS. https://aws.amazon.com/datasets/million-song-dataset/
+
 ##Hypothesis
 
 "Pandora was perhaps the frontrunner of combining the two when it started the 'Music Genome Project' way back in 1999 before terms like Big Data even existed. The project considers songs as datasets and analyzes each song using up to 450 distinct musical characteristics or “genes”. A person – a trained music analyst with an actual degree in music – and automated algorithms comb through the song and classify it as Pop/Rock, Hip-Hop/Electronica, Jazz, World Music, and Classical. Decoding the “genes” of the song helps Pandora find the similarities and then successfully predict what a user might like listening to next."
 http://www.byteacademy.co/blog/item/121-the-music-industry-is-growing-more-reliant-on-data-science
 
-With the Spotify's recent pruchase of Seed Scientific, the usage for improving music curation through data science in undeniable. 
+With Spotify's recent pruchase of Seed Scientific, the usage of data science for improving music curation is undeniable. Data science gives the power of curation and predition - two aspects of data which are continusously increasing in importance due to larger and larger datasets. 
 
-prediction and curation
-
-- predict popularity of song
-- predict next song you will like 
+The goal of this project is to predict the popularity of a song and curate the next song a user might like, not only based on musical attributes of the song, but also based on sentiment analysis of the lyrics. 
 
 ##Project Proposal
 https://prezi.com/dldm6ttndwxh/one-million/
 
-##Available Features
-
-from hdf5 10,000 subset:
-song_id = 
-song_title = 
-song_duration = 
-song_release_year = 
-song_hot = 
-song_speed = 
-song_energy = 
-artist_name = 
-song_dance = 
-song_bar = 
-song_beat = 
-song_time_signature = 
-song_tat = 
-song_mode = 
-song_key = 
-artist_familar = 
-artist_hot = 
-
-##Visualization
-
 ##Process
-
-### 1.get data
-
-#### read in different data sets
-
-##### hdf5 song details 
-(see Getting the Million Song Dataset (HDF5).ipynb)
-
-Used https://github.com/tbertinmahieux/MSongsDB/blob/master/PythonSrc/hdf5_getters.py 
-
-
-genre data
-
-##### kaggle files
-
-
-##### lyrics data
-
-I currently managed to get all of the lyrics data as a sqlite database in AWS EC2 python. 
-https://github.com/tbertinmahieux/MSongsDB/blob/master/Tasks_Demos/Lyrics/mxm_dataset_to_db.py
-
-However, I haven't managed to get it into a format where I can merge it with the rest of the data. 
-
-#####genre data
-   
-#### merge different data sets
-
-### 2. clean data
-
-### 3. visualize and analyze data
-
-### 4. get data ready for model
-
-#### add additional features 
-
-#### use k-means clustering to add additional features
-
-####split into 3 portions
-Split data into train, cross-validation and test sets. (what percentages?)
-
-### 5. decide on model
-
-### 6. test model 
+Please go to the wiki to see more details about the process. 
+https://github.com/jeangelj/predict_music_taste/wiki
 
 ##Conclusion
 ????
