@@ -49,4 +49,18 @@ https://github.com/jeangelj/predict_music_taste/wiki
 ????
 
 ##Business / Practical applications
+While Pandora has more than 450 features and Spotify has unlimited user behavior data, they 
+a. still need a music professional for recommendations
+b. do not manage to predict music taste
+It seems that the features these companies are using are not capturing the essence of taste. 
+This project was an attempt to combine different types of features and predict music taste. 
+While just a small attempt, it definitely stresses the point that we are looking at music one dimensionally. 
+Given the necessary resources, the idea would be to analyze music from a different point of view and establish a model that can actually recommend songs the user will like and would not have found otherwise. 
+Some proposals would be:
+- song wave length
+- lyrics sentiment
+- emotion calculation
+- user's historical listening data beyond user behvior (questionnaire of songs that defined important moments for them, or trigger memories)
+- what users don't like (questionnaire + memory of any song the user marked as did not like and/or skipped) 
+- cross content user behavior (for example movie taste influence on music taste) 
 
