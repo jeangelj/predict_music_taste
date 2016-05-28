@@ -1,0 +1,32 @@
+#download lyrics database http://labrosa.ee.columbia.edu/millionsong/musixmatch
+#it does work on my local computer, so no need for AWS (although I did it on the AWS as well)
+
+#first run the code provided to create the database - Thierry Bertin-Mahieux (2011) Columbia University
+#https://github.com/tbertinmahieux/MSongsDB/blob/master/Tasks_Demos/Lyrics/mxm_dataset_to_db.py
+python MSongsDB/Tasks_Demos/Lyrics/mxm_dataset_to_db.py
+
+python
+import sqlite3
+conn= sqlite3.connect('mxm_dataset.db')
+
+#see tables and headers in database
+res = conn.execute("SELECT * FROM sqlite_master WHERE type='table'")
+res.fetchall()
+#OUTPUT: [(u'table',u'words',u'words',2,u'CREATE TABLE words (word TEXT PRIMARY KEY)'),(u'table',u'lyrics',u'lyrics',4,
+#u'CREATE TABLE lyrics (track_id, mxm_tid INT, word TEXT, count INT, is_test INT, FOREIGN KEY)]
+
+#add track_id database
+conn_tmdb = sqlite3.connect('track_metadata.db')
+q = "SELECT sql FROM sqlite_master WHERE tbl_name = 'songs'' AND type = 'table'" 
+c2 = conn_tmdb.cursor()
+q = "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name"
+res = c2.execute(q)
+print res.fetchall()
+#OUTPUT: [(u'songs',)]
+
+#column headers of the track_id database
+q = "SELECT sql FROM sqlite_master WHERE tbl_name = 'songs' AND type = 'table'"
+res = c2.execute(q)
+print res.fetchall()[0][0]
+#OUTPUT: CREATE TABLE songs (track_id text PRIMARY KEY, title text, song_id text, release text, artist_id text, artist_mbid text, artist_name text, duration real, artist_familiarity real, artist_hotttnesss real, year int, track_7digitalid int, shs_perf int, shs_work int)
+
