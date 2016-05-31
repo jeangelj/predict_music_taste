@@ -55,7 +55,7 @@ https://github.com/jeangelj/predict_music_taste/wiki
 4. Unsupervised learning methods were perfect for song recommendation. Unfortunately, the jupyter notebook kernel would die, if I included too many freatues, so I used only 4. But I was still able to recommend songs to a user.
 
 ##Final Presentation
-
+http://slides.com/jdagher/predicting-music-preferences#/
 
 ##Business / Practical applications
 While Pandora has more than 450 features and Spotify has unlimited user behavior data, they 
