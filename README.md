@@ -46,7 +46,16 @@ Please go to the wiki to see more details about the process.
 https://github.com/jeangelj/predict_music_taste/wiki
 
 ##Conclusion
-????
+1. In Machine Learning, 50% of success is the data set. The quantity of data was definitely the biggest hurdle. 
+2. Due to the quantity of data and possible features, music should be considered big data and analyzed as such (Hadoop/Spark)
+3. I couldn't surpass the accuracy rate of 37% for predicting song popularity (Supervised learning)
+  i. For supervised learning machine learning methods the feature selection is essential
+  ii. I was missing the mood of the song (based on lyrics) - I believe this would hav eimproved my model substantially
+  iii. I also established early on that artist_familiarity and artist_hotness had the biggest impact and I kept on using these features; this could have been restritive to my models and the whole approach (the idea is to find songs the user doesn't know, but will like)
+4. Unsupervised learning methods were perfect for song recommendation. Unfortunately, the jupyter notebook kernel would die, if I included too many freatues, so I used only 4. But I was still able to recommend songs to a user.
+
+##Final Presentation
+
 
 ##Business / Practical applications
 While Pandora has more than 450 features and Spotify has unlimited user behavior data, they 
