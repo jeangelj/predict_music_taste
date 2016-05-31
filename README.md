@@ -66,10 +66,14 @@ This project was an attempt to combine different types of features and predict m
 While just a small attempt, it definitely stresses the point that we are looking at music one dimensionally. 
 Given the necessary resources, the idea would be to analyze music from a different point of view and establish a model that can actually recommend songs the user will like and would not have found otherwise. 
 Some proposals would be:
+- more detailed user listening behavior  
+  - number of times song was skipped vs. listened to until the end 
+  - on average was song listened to 25%,50%,75% vs. 100%
+  - if song was listened to right away again (or even repeat song option chosen)
+  - what users don't like (questionnaire + memory of any song the user marked as did not like and/or skipped) 
+  - user's historical listening data beyond user behvior (questionnaire of songs that defined important moments for them, or trigger memories)
 - song wave length
-- lyrics sentiment
+- lyrics sentiment (mood)
 - emotion calculation
-- user's historical listening data beyond user behvior (questionnaire of songs that defined important moments for them, or trigger memories)
-- what users don't like (questionnaire + memory of any song the user marked as did not like and/or skipped) 
 - cross content user behavior (for example movie taste influence on music taste) 
 
