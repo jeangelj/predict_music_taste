@@ -77,3 +77,5 @@ Some proposals would be:
 - emotion calculation
 - cross content user behavior (for example movie taste influence on music taste) 
 
+change
+
